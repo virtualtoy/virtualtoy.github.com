@@ -1,2 +1,0 @@
-virtualtoy.github.com
-=====================
