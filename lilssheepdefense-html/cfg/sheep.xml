@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Entity type="sheep">
+	<Graphic>
+		<Spritemap name="sheep" source="img/game/sheep.png" frameWidth="9" frameHeight="9">
+			<Animation name="idle_up_1" frames="3" />
+			<Animation name="idle_up_2" frames="9" />
+			<Animation name="idle_up_3" frames="15" />
+			<Animation name="idle_down_1" frames="0" />
+			<Animation name="idle_down_2" frames="6" />
+			<Animation name="idle_down_3" frames="12" />
+			<Animation name="walk_up_1" frameRate="10" frames="4,3,5,3" />
+			<Animation name="walk_up_2" frameRate="10" frames="10,9,11,9" />
+			<Animation name="walk_up_3" frameRate="10" frames="16,15,17,15" />
+			<Animation name="walk_down_1" frameRate="10" frames="1,0,2,0" />
+			<Animation name="walk_down_2" frameRate="10" frames="7,6,8,6" />
+			<Animation name="walk_down_3" frameRate="10" frames="13,12,14,12" />
+		</Spritemap>
+		<Spritemap name="sheep_side" source="img/game/sheep_side.png" frameWidth="11" frameHeight="8">
+			<Animation name="idle_right_1" frames="5" />
+			<Animation name="idle_right_2" frames="4" />
+			<Animation name="idle_right_3" frames="3" />
+			<Animation name="idle_left_1" frames="0" />
+			<Animation name="idle_left_2" frames="1" />
+			<Animation name="idle_left_3" frames="2" />
+			<Animation name="walk_right_1" frameRate="10" frames="17,5,16,5" />
+			<Animation name="walk_right_2" frameRate="10" frames="15,4,14,4" />
+			<Animation name="walk_right_3" frameRate="10" frames="13,3,12,3" />
+			<Animation name="walk_left_1" frameRate="10" frames="6,0,7,0" />
+			<Animation name="walk_left_2" frameRate="10" frames="8,1,9,1" />
+			<Animation name="walk_left_3" frameRate="10" frames="10,2,11,2" />
+			<Animation name="dead_left" frames="18" />
+			<Animation name="dead_right" frames="19" />
+		</Spritemap>
+	</Graphic>
+</Entity>

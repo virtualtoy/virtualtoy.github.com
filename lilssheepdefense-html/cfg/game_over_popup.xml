@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Scene>
+	<Entities>
+		<Entity x="60" y="50" layer="-2000">
+			<Graphic>
+				<Stamp source="img/game/panel.png" />
+			</Graphic>
+		</Entity>
+		<Entity name="gameOverScoreText" x="90" y="60" layer="-2000">
+			<Graphic>
+				<BitmapText font="font/04b03.fnt" text="Score:" />
+			</Graphic>
+		</Entity>
+		<Entity name="gameOverBestScoreText" x="90" y="74" layer="-2000">
+			<Graphic>
+				<BitmapText font="font/04b03.fnt" text="Best:" />
+			</Graphic>
+		</Entity>
+		<Entity class="ld31.ui.Button" name="twitterButton" x="65" y="88" layer="-2000" normalState="img/mainmenu/twitter_btn_normal.png" activeState="img/mainmenu/twitter_btn_active.png" />
+		<Entity class="ld31.ui.Button" name="playButton" x="97" y="106" layer="-2000" normalState="img/mainmenu/play_btn_normal.png" activeState="img/mainmenu/play_btn_active.png" />
+	</Entities>
+</Scene>

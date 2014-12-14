@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Entity width="23" height="25" originX="12" originY="25">
+	<Graphic>
+		<Stamp source="img/game/tree.png" x="-12" y="-25" />
+	</Graphic>
+</Entity>

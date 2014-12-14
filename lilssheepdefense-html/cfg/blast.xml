@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Entity layer="1">
+	<Graphic>
+		<Spritemap source="img/game/blast.png" x="-4" y="-4" frameWidth="9" frameHeight="9">
+			<Animation name="default" frameRate="15" frames="0,1,2,3" loop="false" />
+		</Spritemap>
+	</Graphic>
+</Entity>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Scene>
+	<Entities>
+		<Entity>
+			<Graphic>
+				<Stamp source="img/game/map.png" />
+				<BitmapText font="font/04b03.fnt" x="14" y="170" text="Created by virtualtoy for Ludum Dare 31" />
+				<BitmapText font="font/04b03.fnt" x="6" y="160" text="Move - arrows, shoot - A/Z, toggle sfx - S" />
+			</Graphic>
+		</Entity>
+		<Entity name="logo">
+			<Graphic>
+				<Stamp name="logo" source="img/mainmenu/logo.png" x="83" y="20" />
+			</Graphic>
+		</Entity>
+		<Entity name="credits" visible="false">
+			<Graphic>
+				<BitmapText name="credits" font="font/04b03.fnt" x="10" y="30" wordWrap="true" width="220" text="Graphics by Ksenia Romanova\n\nSound effects by pdsounds.org,\nfreesound.org and partnersinrhyme.com\n\nSheep sounds by Figowitz\n\nSilly Fun Kevin MacLeod (incompetech.com)\nLicensed under Creative Commons:\nBy Attribution 3.0\ncreativecommons.org/licenses/by/3.0/" />
+			</Graphic>
+		</Entity>
+		<Entity class="ld31.ui.Button" name="playButton" x="97" y="83" normalState="img/mainmenu/play_btn_normal.png" activeState="img/mainmenu/play_btn_active.png" />
+		<Entity class="ld31.ui.Button" name="sfxButton" x="86" y="104" normalState="img/mainmenu/sfx_btn_normal.png" activeState="img/mainmenu/sfx_btn_active.png" />
+		<Entity class="ld31.ui.Button" name="creditsButton" x="101" y="118" normalState="img/mainmenu/credits_btn_normal.png" activeState="img/mainmenu/credits_btn_active.png" />
+		<Entity class="ld31.ui.Button" name="twitterButton" x="67" y="132" normalState="img/mainmenu/twitter_btn_normal.png" activeState="img/mainmenu/twitter_btn_active.png" />
+		<Entity class="ld31.ui.Button" name="closeButton" x="231" y="2" visible="false" normalState="img/mainmenu/close_btn_normal.png" activeState="img/mainmenu/close_btn_active.png" />
+	</Entities>
+</Scene>

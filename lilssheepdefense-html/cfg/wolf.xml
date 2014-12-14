@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Entity type="wolf">
+	<Graphic>
+		<Spritemap name="wolf" source="img/game/wolf.png" frameWidth="8" frameHeight="12">
+			<Animation name="idle_up" frames="3" />
+			<Animation name="idle_down" frames="0" />
+			<Animation name="walk_up" frameRate="10" frames="4,3,5,3" />
+			<Animation name="walk_down" frameRate="10" frames="1,0,2,0" />
+		</Spritemap>
+		<Spritemap name="wolf_side" source="img/game/wolf_side.png" frameWidth="14" frameHeight="10">
+			<Animation name="idle_right" frames="11" />
+			<Animation name="idle_left" frames="0" />
+			<Animation name="walk_right" frameRate="10" frames="7,8,9,10" />
+			<Animation name="walk_left" frameRate="10" frames="4,3,2,1" />
+			<Animation name="dead_right" frames="6" />
+			<Animation name="dead_left" frames="5" />
+		</Spritemap>
+	</Graphic>
+</Entity>

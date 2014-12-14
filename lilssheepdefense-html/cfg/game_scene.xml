@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Scene>
+	<Entities>
+		<Entity layer="1000">
+			<Graphic>
+				<Stamp source="img/game/map.png" />
+			</Graphic>
+		</Entity>
+		<Entity name="scoreText" x="2" y="2" layer="-1000">
+			<Graphic>
+				<BitmapText font="font/04b03.fnt" text="Score: 0" />
+			</Graphic>
+		</Entity>
+		<Entity name="timeText" x="105" y="170" layer="-1000">
+			<Graphic>
+				<BitmapText font="font/04b03.fnt" text="02:00" />
+			</Graphic>
+		</Entity>
+	</Entities>
+</Scene>
