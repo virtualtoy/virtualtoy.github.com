@@ -4,13 +4,34 @@
     <meta charset="UTF-8">
     <title>Confess-O-Matic</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script>
+        (function(){
+            var i = 0;
+            var s = "...";
+            var interval = setInterval(function() {
+                var e = document.getElementById("loading-message");
+                if (e) {
+                    var text = "Loading, please wait" + s.substr(0, ++i%4);
+                    if ("textContent" in e) {
+                        e.textContent = text;
+                    }else {
+                        e.innerText = text;
+                    }
+                }
+            }, 400);
+            window.__stopPreloader__ = function () {
+                clearInterval(interval);
+                document.getElementById("loading-message").style.display = "none";
+            };
+        })();
+    </script>
 </head>
 <body onload="init()">
     <div class="canvas-container">
         <canvas id="app-canvas" width="256" height="192">
             Sorry, your browser doesn't support canvas
         </canvas>
-        <span id="loading-message">Loading, please wait...</span>
+        <span id="loading-message"></span>
     </div>
 
     <!-- js start --><script src="js/libs.js"></script><script src="js/app.js"></script><!-- js end -->
