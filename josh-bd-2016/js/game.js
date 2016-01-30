@@ -42,7 +42,7 @@
         view.addChild(background);
 
         var spriteSheet = new createjs.SpriteSheet({
-            images: [queue.getResult('img/stripe.png')],
+            images: [queue.getResult('img/sprite.png')],
             frames: [
                 [0, 0, 800, 33],
                 [0, 33, 800, 34],
@@ -66,6 +66,11 @@
         var spriteBottom = new createjs.Sprite(spriteSheet, 'bottom');
         spriteBottom.y = spriteMiddle.y + spriteMiddle.getBounds().height;
         view.addChild(spriteBottom);
+
+        var overlay = new createjs.Bitmap(queue.getResult('img/overlay.png'));
+        overlay.x = 96;
+        overlay.y = 6;
+        view.addChild(overlay);
 
         var text1 = new createjs.Text("", "16px Arial", "#000000");
         text1.x = 11;
@@ -136,10 +141,10 @@
                     updateStoppingBottom();
                     break;
             }
-            updateStripes();
+            updateSprites();
         }
 
-        function updateStripes() {
+        function updateSprites() {
             spriteTop.x += vTop;
             spriteMiddle.x += vMiddle;
             spriteBottom.x += vBottom;

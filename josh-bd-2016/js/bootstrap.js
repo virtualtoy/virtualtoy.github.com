@@ -28,7 +28,8 @@
         queue.on('complete', onLoadComplete, this);
         queue.loadManifest([
             'img/background.png',
-            'img/stripe.png'
+            'img/sprite.png',
+            'img/overlay.png'
         ]);
     };
 
