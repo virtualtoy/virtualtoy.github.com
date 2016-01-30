@@ -226,7 +226,7 @@
             var bottom = Math.abs(Math.round(spriteBottom.x) % 400 / 100);
             if (top == middle && top == bottom) {
                 var winner = ([KARINE, KIT, JOSH, ELLIOTT])[top];
-                var prevScore = localStorage.getItem('score.' + winner) || 0;
+                var prevScore = parseInt(localStorage.getItem('score.' + winner)) || 0;
                 localStorage.setItem('score.' + winner, prevScore + 1);
                 updateText();
             }
